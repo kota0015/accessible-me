@@ -1,6 +1,6 @@
 body {
   font-family: 'Roboto', Helvetica, sans-serif;
-  background: rgba(128, 128, 128, .2);
+  
   margin: 0;
   padding: 0;
 
@@ -8,18 +8,22 @@ body {
 
 h1{
   cursor: pointer;
-  margin-top: 1.2em;
+  
  
 }
 
 .container {
+  background: rgb(236, 239, 240);
+  /* background-color: blue; */
   max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  margin:auto;
+  padding: 1em;
+  
 }
 
 img {
-  width: 100%;
+  width:  100%;
+  margin-top: 1em;
 }
 
 
@@ -39,14 +43,12 @@ img {
   text-align: center;
   color: aliceblue;
   justify-content: center;
-
-  
   margin-left: 8%;
-  
+  }
 
-}
 .main-nav ul li:nth-child(1){
   margin-left: 0;
+ 
 }
 
 .main-nav ul li a {
@@ -56,6 +58,7 @@ img {
   text-decoration: none;
   font-size: 1.25rem;
   padding: .4em;
+
 
   
 }
@@ -70,30 +73,38 @@ a:focus{
 form input,
 form textarea {
   display: block;
-  width: 100%;
+  width: 50%;
   margin-bottom: 1rem;
   padding: .5rem 1rem;
 }
 
 form textarea {
-  min-height: 150px;
-  max-height: 150px;
-  height: 150px;
-  resize: none;
+height: 150px;
+  
 }
 
 form button {
-  background: none;
-  border: 2px solid black;
-  padding: 1rem;
+  width: 5rem;
+  padding: .4rem;
   text-transform: uppercase;
-}
+  background-color: black;
+  color: white;
 
-.copyr {
-  margin-top: 1em;
+
+  font-size: 1.1rem;
+ 
   
-  margin-bottom: 1em;
 }
+form button:hover {
+  cursor: pointer
+  
+}
+form button:active {
+  background-color: red;
+  
+}
+  
+
 skip-links{
   list-style: none;
   margin: 0;
@@ -110,7 +121,8 @@ skip-links{
   background-color: black;
   color:white;
   padding: .5em 1em;
-  font-weight: bold;
+  text-decoration: none;
+  
 }
 .skip-links a:focus{
   top: 0;
@@ -126,13 +138,28 @@ skip-links{
   top: auto;
   background-color: black;
   color:white;
-  padding: .5em 1em;
-  font-weight: bold;
-  
-} 
+  padding: .5em;
+  text-decoration: none;
+}
+
+
 .dont-show a:focus{
   height: auto;
   position: static;
   width: auto;
 
+}
+footer{
+  margin-top: .5em;
+  background-color: rgb(71, 93, 110);
+  height: 3rem;
+}
+.copyr {
+  text-align: center;
+  color: white;
+
+  padding-top: 1rem;
+  
+
+  
 }
