@@ -19,10 +19,10 @@
         <li><a href="#main-nav">Skip to main nav</a></li>
         <li><a href="#main-content">Skip to main content</a></li>
       </ul>
-    <header class="site-header">
-      <h1>Jam Box Studios </h1>
+    <header class="site-header" role="banner">
+      <h1 role="heading">Jam Box Studios </h1>
       <nav class="main-nav" id="main-nav">
-        <ul>
+        <ul role="navigation">
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
@@ -37,7 +37,7 @@
       <h2>Welcome to Jam Box</h2>
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
       <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <img src="https://placekitten.com/1200/900" alt="Nice cat image looking twords you" class="banner">
+      <img src="https://placekitten.com/1200/900" alt="An image of nice cat looking at you has red color in the background " class="banner">
       <section class="owner">
         <h2>Meet the owner</h2>
         
@@ -59,14 +59,14 @@
         <h2>Contact Us</h2>
         <form action="thanks.html">
           
-          <label for="name">Full Name:</label>
-          <input type="text" id="name" placeholder="Full Name">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" placeholder="Full Name">
 
-          <label for="email">Email:</label>          
-          <input type="text" id="email" placeholder="Email">
+          <label for="youremail">Email:</label>          
+          <input type="email" id="youremail" name="youremail" placeholder="Email">
 
           <label for="subject">Subject:</label>
-          <input type="text" id="subject" placeholder="Subject">
+          <input type="text" id="subject">
 
           <label for="message">Your Message:</label>
           <textarea id="message" name="message" rows="4" cols="50">           
@@ -77,8 +77,17 @@
       </section>
     </div>
 
-    <footer class="site-footer">
-      &copy; 2021 Jam Box Studios
+    <footer class="site-footer" role="contentinfo">
+      <div class="copyr">
+        &copy; 2021 Jam Box Studios
+
+      </div>
+      
+      <ul  class="dont-show">
+        <li><a href="#main-nav">Skip to top</a></li>
+        
+      </ul>
+      
     </footer>
 
   </div>
