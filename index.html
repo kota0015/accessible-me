@@ -14,15 +14,17 @@
 
 <body>
   <div class="container">
-    <div class="container">
+    <div >
       <ul class="skip-links">
         <li><a href="#main-nav">Skip to main nav</a></li>
         <li><a href="#main-content">Skip to main content</a></li>
       </ul>
+    </div>
+
     <header class="site-header" role="banner">
       <h1 role="heading">Jam Box Studios </h1>
       <nav class="main-nav" id="main-nav">
-        <ul role="navigation">
+        <ul >
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Reservation</a></li>
@@ -43,11 +45,11 @@
       <section class="owner">
         <h2>Meet the owner</h2>
         
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h2>Address</h2>
         <p>
